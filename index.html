@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atendimento Profissional</title>
+  <title>Psicóloga Iara Motini</title>
 
   <style>
     * {
@@ -16,115 +16,153 @@
     body {
       background: #f9fafb;
       color: #1f2937;
+      line-height: 1.6;
     }
 
+    /* HERO */
     header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
       color: white;
-      padding: 70px 20px;
-      text-align: center;
+      padding: 80px 20px;
     }
 
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      max-width: 650px;
-      margin: auto;
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background: #22c55e;
-      color: white;
-      padding: 16px 32px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #16a34a;
-    }
-
-    section {
+    .hero {
       max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
-    }
-
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 35px;
-      border-radius: 14px;
-      box-shadow: 0 15px 25px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .card h3 {
-      margin-bottom: 15px;
-      color: #2563eb;
-    }
-
-    .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
       align-items: center;
     }
 
-    .about img {
-      width: 100%;
-      border-radius: 16px;
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
-    .cta {
-      background: #2563eb;
+    .hero span {
+      color: #a5f3fc;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #22c55e;
       color: white;
-      text-align: center;
+      padding: 16px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn.alt {
+      background: #0ea5e9;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
       padding: 70px 20px;
     }
 
-    .cta h2 {
+    h2 {
+      margin-bottom: 30px;
       font-size: 2.2rem;
-      margin-bottom: 20px;
+      color: #1e3a8a;
+      text-align: center;
+    }
+
+    /* QUALIFICAÇÕES */
+    .qualificacoes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    /* TERAPIAS */
+    .terapias {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    /* FEEDBACKS */
+    .feedbacks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .feedback {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      font-style: italic;
+    }
+
+    /* CTA FINAL */
+    .cta {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
     }
 
     footer {
-      background: #111827;
+      background: #020617;
       color: #9ca3af;
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
     }
 
+    /* RESPONSIVO */
     @media (max-width: 900px) {
-      .benefits {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .about {
+      .hero {
         grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+        text-align: center;
       }
 
-      .benefits {
+      .qualificacoes,
+      .feedbacks,
+      .beneficios,
+      .terapias {
         grid-template-columns: 1fr;
       }
     }
@@ -134,61 +172,101 @@
 
   <!-- HERO -->
   <header>
-    <h1>Cuidado Profissional Para Sua Saúde</h1>
-    <p>Atendimento humanizado, seguro e personalizado para ajudar você a recuperar qualidade de vida e bem-estar.</p>
-    <a href="#contato" class="btn">Agendar Consulta</a>
+    <div class="hero">
+      <div>
+        <h1>Psicóloga <span>Iara Motini</span></h1>
+        <p>
+          Atendimento psicológico humanizado, baseado em ciência,
+          acolhimento e resultados reais para adultos e crianças.
+        </p>
+        <a href="https://wa.me/5599999999999" class="btn">WhatsApp</a>
+        <a href="mailto:contato@email.com" class="btn alt">E-mail</a>
+      </div>
+
+      <!-- FOTO DA PROFISSIONAL -->
+      <img src="https://via.placeholder.com/450x550" alt="Psicóloga Iara Motini">
+    </div>
   </header>
 
-  <!-- BENEFÍCIOS -->
+  <!-- QUALIFICAÇÕES -->
   <section>
-    <div class="benefits">
-      <div class="card">
-        <h3>Atendimento Humanizado</h3>
-        <p>Escuta ativa, empatia e foco total nas suas necessidades.</p>
-      </div>
+    <h2>Qualificações Profissionais</h2>
+    <div class="qualificacoes">
+      <div class="card">Graduação em Psicologia</div>
+      <div class="card">Especialização em Terapia ABA</div>
+      <div class="card">CRP: 00/00000</div>
+    </div>
+  </section>
 
+  <!-- BENEFÍCIOS DA TERAPIA -->
+  <section>
+    <h2>Benefícios da Terapia</h2>
+    <div class="beneficios">
       <div class="card">
-        <h3>Profissional Qualificado</h3>
-        <p>Experiência, ética e atualização constante para melhores resultados.</p>
+        Auxílio no controle da ansiedade, estresse e emoções
       </div>
-
       <div class="card">
-        <h3>Resultados Reais</h3>
-        <p>Tratamentos personalizados para evolução contínua.</p>
+        Desenvolvimento emocional e comportamental
+      </div>
+      <div class="card">
+        Melhora nos relacionamentos pessoais e familiares
+      </div>
+      <div class="card">
+        Autoconhecimento e qualidade de vida
       </div>
     </div>
   </section>
 
-  <!-- SOBRE -->
+  <!-- TERAPIAS -->
   <section>
-    <div class="about">
-      <div>
-        <h2 style="margin-bottom: 20px;">Sobre o Atendimento</h2>
-        <p style="margin-bottom: 15px;">
-          Nosso trabalho é focado em oferecer um atendimento acolhedor,
-          respeitando a individualidade de cada paciente.
-        </p>
+    <h2>Atendimentos Realizados</h2>
+    <div class="terapias">
+      <div class="card">
+        <h3>Terapia ABA</h3>
         <p>
-          Aqui você encontra um espaço seguro, profissional e preparado
-          para ajudar no seu processo de cuidado e recuperação.
+          Intervenção baseada em evidências, focada no desenvolvimento
+          de habilidades sociais, cognitivas e comportamentais.
         </p>
       </div>
 
-      <img src="https://via.placeholder.com/500x350" alt="Atendimento profissional">
+      <div class="card">
+        <h3>Avaliações Psicológicas</h3>
+        <p>
+          Avaliações completas para diagnóstico, acompanhamento
+          e orientação terapêutica.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACKS -->
+  <section>
+    <h2>Feedbacks de Pacientes</h2>
+    <div class="feedbacks">
+      <div class="feedback">
+        “Profissional extremamente atenciosa e competente.”
+      </div>
+      <div class="feedback">
+        “O atendimento fez toda a diferença na minha vida.”
+      </div>
+      <div class="feedback">
+        “Ambiente acolhedor e tratamento eficaz.”
+      </div>
     </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section class="cta" id="contato">
-    <h2>Dê o Primeiro Passo Hoje</h2>
-    <p style="margin-bottom: 30px;">
-      Agende sua consulta e comece seu tratamento com quem se importa com você.
+  <section class="cta">
+    <h2>Agende Seu Atendimento</h2>
+    <p>
+      Dê o primeiro passo para uma vida mais equilibrada e saudável.
     </p>
-    <a href="#" class="btn">Entrar em Contato</a>
+    <a href="https://wa.me/5599999999999" class="btn">Falar no WhatsApp</a>
+    <a href="mailto:contato@email.com" class="btn alt">Enviar E-mail</a>
   </section>
 
   <footer>
-    © 2026 - Atendimento Profissional | Todos os direitos reservados
+    © 2026 - Psicóloga Iara Motini | Todos os direitos reservados
   </footer>
 
 </body>
