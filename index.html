@@ -1,12 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Lara montini </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento Profissional</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #22c55e;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #16a34a;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #2563eb;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .cta {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .benefits {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p> testando a larinha </p>
-    <p> beijando a larinha </p>
+
+  <!-- HERO -->
+  <header>
+    <h1>Cuidado Profissional Para Sua Saúde</h1>
+    <p>Atendimento humanizado, seguro e personalizado para ajudar você a recuperar qualidade de vida e bem-estar.</p>
+    <a href="#contato" class="btn">Agendar Consulta</a>
+  </header>
+
+  <!-- BENEFÍCIOS -->
+  <section>
+    <div class="benefits">
+      <div class="card">
+        <h3>Atendimento Humanizado</h3>
+        <p>Escuta ativa, empatia e foco total nas suas necessidades.</p>
+      </div>
+
+      <div class="card">
+        <h3>Profissional Qualificado</h3>
+        <p>Experiência, ética e atualização constante para melhores resultados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resultados Reais</h3>
+        <p>Tratamentos personalizados para evolução contínua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section>
+    <div class="about">
+      <div>
+        <h2 style="margin-bottom: 20px;">Sobre o Atendimento</h2>
+        <p style="margin-bottom: 15px;">
+          Nosso trabalho é focado em oferecer um atendimento acolhedor,
+          respeitando a individualidade de cada paciente.
+        </p>
+        <p>
+          Aqui você encontra um espaço seguro, profissional e preparado
+          para ajudar no seu processo de cuidado e recuperação.
+        </p>
+      </div>
+
+      <img src="https://via.placeholder.com/500x350" alt="Atendimento profissional">
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta" id="contato">
+    <h2>Dê o Primeiro Passo Hoje</h2>
+    <p style="margin-bottom: 30px;">
+      Agende sua consulta e comece seu tratamento com quem se importa com você.
+    </p>
+    <a href="#" class="btn">Entrar em Contato</a>
+  </section>
+
+  <footer>
+    © 2026 - Atendimento Profissional | Todos os direitos reservados
+  </footer>
+
 </body>
 </html>
