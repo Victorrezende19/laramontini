@@ -1,273 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psicóloga Iara Motini</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lara montini | Psicologia</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      background: #f9fafb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    /* HERO */
-    header {
-      background: linear-gradient(135deg, #2563eb, #1e3a8a);
-      color: white;
-      padding: 80px 20px;
-    }
-
-    .hero {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero span {
-      color: #a5f3fc;
-    }
-
-    .hero p {
-      margin-bottom: 25px;
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #22c55e;
-      color: white;
-      padding: 16px 32px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    .btn.alt {
-      background: #0ea5e9;
-    }
-
-    .hero img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 70px 20px;
-    }
-
-    h2 {
-      margin-bottom: 30px;
-      font-size: 2.2rem;
-      color: #1e3a8a;
-      text-align: center;
-    }
-
-    /* QUALIFICAÇÕES */
-    .qualificacoes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    /* BENEFÍCIOS */
-    .beneficios {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-    }
-
-    /* TERAPIAS */
-    .terapias {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-    }
-
-    /* FEEDBACKS */
-    .feedbacks {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .feedback {
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      font-style: italic;
-    }
-
-    /* CTA FINAL */
-    .cta {
-      background: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .cta h2 {
-      color: white;
-    }
-
-    .cta p {
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-    }
-
-    footer {
-      background: #020617;
-      color: #9ca3af;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* RESPONSIVO */
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .qualificacoes,
-      .feedbacks,
-      .beneficios,
-      .terapias {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header>
-    <div class="hero">
-      <div>
-        <h1>Psicóloga <span>Iara Motini</span></h1>
+<!-- TOPO -->
+<header class="top-bar">
+    <div class="logo">
+        <span class="logo-a">L</span>
+        <span class="logo-text">Lara Montini </span>
+    </div>
+
+    <a href="https://wa.me/5561983776667" class="phone-btn">
+        (61) 98377-6667
+    </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-image">
+        <img src="img/img1.jpeg" alt="Lara montini">
+    </div>
+
+    <div class="hero-content">
+        <span class="tag">PSICOLOGIA</span>
+
+        <h1>
+            Sua história importa.<br>
+            Sua dor tem espaço.<br>
+            Seu recomeço é possível!
+        </h1>
+
         <p>
-          Atendimento psicológico humanizado, baseado em ciência,
-          acolhimento e resultados reais para adultos e crianças.
+            Psicologia com base científica,<br>
+            mas guiada pelo que é humano, real e possível.
         </p>
-        <a href="https://wa.me/5599999999999" class="btn">WhatsApp</a>
-        <a href="mailto:contato@email.com" class="btn alt">E-mail</a>
-      </div>
 
-      <!-- FOTO DA PROFISSIONAL -->
-      <img src="https://via.placeholder.com/450x550" alt="Psicóloga Iara Motini">
+        <a href="https://wa.me/5561983776667" class="cta">
+            VAMOS CONVERSAR!
+        </a>
     </div>
-  </header>
-
-  <!-- QUALIFICAÇÕES -->
-  <section>
-    <h2>Qualificações Profissionais</h2>
-    <div class="qualificacoes">
-      <div class="card">Graduação em Psicologia</div>
-      <div class="card">Especialização em Terapia ABA</div>
-      <div class="card">CRP: 00/00000</div>
-    </div>
-  </section>
-
-  <!-- BENEFÍCIOS DA TERAPIA -->
-  <section>
-    <h2>Benefícios da Terapia</h2>
-    <div class="beneficios">
-      <div class="card">
-        Auxílio no controle da ansiedade, estresse e emoções
-      </div>
-      <div class="card">
-        Desenvolvimento emocional e comportamental
-      </div>
-      <div class="card">
-        Melhora nos relacionamentos pessoais e familiares
-      </div>
-      <div class="card">
-        Autoconhecimento e qualidade de vida
-      </div>
-    </div>
-  </section>
-
-  <!-- TERAPIAS -->
-  <section>
-    <h2>Atendimentos Realizados</h2>
-    <div class="terapias">
-      <div class="card">
-        <h3>Terapia ABA</h3>
-        <p>
-          Intervenção baseada em evidências, focada no desenvolvimento
-          de habilidades sociais, cognitivas e comportamentais.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Avaliações Psicológicas</h3>
-        <p>
-          Avaliações completas para diagnóstico, acompanhamento
-          e orientação terapêutica.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEEDBACKS -->
-  <section>
-    <h2>Feedbacks de Pacientes</h2>
-    <div class="feedbacks">
-      <div class="feedback">
-        “Profissional extremamente atenciosa e competente.”
-      </div>
-      <div class="feedback">
-        “O atendimento fez toda a diferença na minha vida.”
-      </div>
-      <div class="feedback">
-        “Ambiente acolhedor e tratamento eficaz.”
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="cta">
-    <h2>Agende Seu Atendimento</h2>
-    <p>
-      Dê o primeiro passo para uma vida mais equilibrada e saudável.
+</section>
+<!-- ÁREAS DE ATUAÇÃO -->
+<section class="areas">
+    <h2>Áreas de atuação</h2>
+    <p class="areas-subtitle">
+        Conte com uma profissional que acredita que somos seres únicos,
+        onde mente e corpo estão intrinsecamente ligados!
     </p>
-    <a href="https://wa.me/5599999999999" class="btn">Falar no WhatsApp</a>
-    <a href="mailto:contato@email.com" class="btn alt">Enviar E-mail</a>
-  </section>
 
-  <footer>
-    © 2026 - Psicóloga Iara Motini | Todos os direitos reservados
-  </footer>
+    <div class="areas-grid">
+        <div class="area-card">
+            <span class="check">✓</span>
+            <h3>Terapia Cognitiva Comportamental</h3>
+            <p>
+                Atuo com crianças, adolescentes e adultos, focando na
+                identificação e modificação de padrões de pensamento e
+                comportamento disfuncionais para melhorar o bem-estar
+                emocional e promover habilidades de enfrentamento.
+            </p>
+        </div>
+
+        <div class="area-card">
+            <span class="check">✓</span>
+            <h3>Análise Aplicada do Comportamento</h3>
+            <p>
+                Ofereço serviços de psicologia especializados em Análise
+                Aplicada do Comportamento (ABA), com abordagem
+                individualizada. Realizo avaliação detalhada, desenvolvo
+                planos de intervenção personalizados e acompanho o progresso
+                de cada cliente.
+            </p>
+        </div>
+
+        <div class="area-card">
+            <span class="check">✓</span>
+            <h3>Neuropsicologia e Transtornos de Neurodesenvolvimento</h3>
+            <p>
+                Avaliação e intervenção em questões cognitivas, emocionais e
+                comportamentais relacionadas a lesões cerebrais e transtornos
+                neurológicos, como TEA e TDAH, visando otimizar o
+                funcionamento adaptativo do cliente.
+            </p>
+        </div>
+
+        <div class="area-card">
+            <span class="check">✓</span>
+            <h3>Atendimento Crianças e Adolescentes</h3>
+            <p>
+                Trabalho especializado e individualizado para crianças e
+                adolescentes, com abordagem integrativa para proporcionar um
+                ambiente seguro, acolhedor e favorecer um desenvolvimento
+                saudável e equilibrado.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- FEEDBACKS -->
+<section class="feedbacks">
+    <h2>Feedbacks dos pacientes</h2>
+    <p class="subtitle">Conheça alguns depoimentos.</p>
+
+    <div class="feedback-cards">
+        <img src="img/feedback1.jpg" alt="Feedback 1">
+        <img src="img/feedback2.jpg" alt="Feedback 2">
+        <img src="img/feedback3.jpg" alt="Feedback 3">
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+    <div class="cta-text">
+        <h2>Invista em sua saúde mental hoje mesmo!</h2>
+        <p>
+            Venha descobrir o caminho para seu bem-estar e
+            qualidade de vida!
+        </p>
+
+        <a href="https://wa.me/5561983776667" class="cta">
+            VAMOS CONVERSAR!
+        </a>
+    </div>
+
+    <div class="cta-image">
+        <img src="img/img2.jpeg" alt="Alice Lawall">
+    </div>
+</section>
 
 </body>
+<!-- FAQ -->
+<section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <p class="faq-subtitle">Tire todas as suas dúvidas sobre o atendimento.</p>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Você atende presencialmente?
+            <span class="icon">▲</span>
+        </button>
+        <div class="faq-answer active">
+            <p>Sim. O atendimento presencial é realizado mediante agendamento.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Quanto tempo dura a sessão?
+            <span class="icon">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>As sessões têm duração média de 50 minutos.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Com que frequência devemos nos encontrar?
+            <span class="icon">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>A frequência é definida de forma individual, geralmente semanal.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Quais são as formas de pagamento?
+            <span class="icon">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>As informações sobre valores e formas de pagamento são passadas no primeiro contato.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Como funciona em casos de crise?
+            <span class="icon">▼</span>
+        </button>
+        <div class="faq-answer">
+            <p>Orientações específicas para situações de crise são combinadas durante o processo terapêutico.</p>
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+    <div class="footer-content">
+        <span>Lara Montini • Psicologia</span>
+        <span>© 2026 Todos os direitos reservados.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+
 </html>
